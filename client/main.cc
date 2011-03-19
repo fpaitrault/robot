@@ -6,7 +6,7 @@
  */
 #include <iostream>
 #include <Ice/Ice.h>
-#include "motor.h"
+#include "hardware.h"
 using namespace std;
 //-----------------------------------------------------------------------------
 class RobotClient : public Ice::Application
@@ -45,13 +45,12 @@ int RobotClient::run(int argc, char* argv[])
         return EXIT_FAILURE;
     }
 
-    robot::motorPrx motors = robot::motorPrx::checkedCast(
+    hardware::motorPrx motors = hardware::motorPrx::checkedCast(
         communicator()->stringToProxy("Motors:tcp -h 192.168.0.12 -p 10001"));
 
 //    motors->move(150);
 //    motors->rotate(90);
 //    motors->rotate(-90);
 //    motors->move(-150);
-    motors->measure();
 }
 //-----------------------------------------------------------------------------

@@ -8,12 +8,12 @@
 #ifndef MOTORI_H_
 #define MOTORI_H_
 
-#include "motor.h"
+#include "hardware.h"
 #include "impl/control/motorControl.h"
 
 namespace Robot
 {
-class motorI : public robot::motor
+class motorI : public hardware::motor
 {
 protected:
 	motorControl control_;

@@ -1,0 +1,7 @@
+module robot
+{
+	interface robot
+	{
+		
+	};
+};
