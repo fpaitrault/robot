@@ -7,7 +7,7 @@
 #include <pthread.h>
 #include <Ice/Ice.h>
 #include "motorServiceI.h"
-#include "impl/IceCom/motorI.h"
+#include "motorI.h"
 
 using namespace std;
 

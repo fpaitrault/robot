@@ -9,7 +9,7 @@
 #define MOTORI_H_
 
 #include "hardware.h"
-#include "impl/control/motorControl.h"
+#include "control/motorControl.h"
 
 namespace Robot
 {

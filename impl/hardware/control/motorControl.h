@@ -8,8 +8,8 @@
 #ifndef MOTORCONTROL_H_
 #define MOTORCONTROL_H_
 
-#include "impl/shared/RTThread.h"
-#include "impl/serial/motorSerial.h"
+#include "RTThread.h"
+#include "../serial/motorSerial.h"
 
 namespace Robot
 {
